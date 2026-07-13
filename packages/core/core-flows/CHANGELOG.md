@@ -1,5 +1,30 @@
 # @medusajs/core-flows
 
+## 2.17.3
+
+### Patch Changes
+
+- [#15840](https://github.com/medusajs/medusa/pull/15840) [`dfdcdd7467ede40e1bb80ce866bfe2c256b8ff86`](https://github.com/medusajs/medusa/commit/dfdcdd7467ede40e1bb80ce866bfe2c256b8ff86) Thanks [@nam-stx](https://github.com/nam-stx)! - feat(core-flows,order,cart,types,medusa): Add data and metadata fields to tax line models
+
+- [#15746](https://github.com/medusajs/medusa/pull/15746) [`f0e86a06ada4e43cf61383a65603dab7ef5e8039`](https://github.com/medusajs/medusa/commit/f0e86a06ada4e43cf61383a65603dab7ef5e8039) Thanks [@Kelpy2004](https://github.com/Kelpy2004)! - fix(core-flows): pass customer groups to pricing context in createCartWorkflow
+
+- [#15969](https://github.com/medusajs/medusa/pull/15969) [`83ec164e5e475880603188bdd29991964a8136d1`](https://github.com/medusajs/medusa/commit/83ec164e5e475880603188bdd29991964a8136d1) Thanks [@nam-stx](https://github.com/nam-stx)! - fix(core-flows): preserve `data` field in `prepareTaxLinesData` during cart completion
+
+  PR #15840 added the `data` column to tax line DTOs and the set/upsert steps, but `prepareTaxLinesData` in `cart/utils/prepare-line-item-data.ts` — which copies cart tax lines to order tax lines during `complete-cart` — was not updated. As a result the `data` field (used by providers like Stripe Tax to store jurisdiction breakdowns) was silently discarded on every order placement.
+
+- [#15924](https://github.com/medusajs/medusa/pull/15924) [`8078ac6c62994ebc6d279c2612472086c20ce346`](https://github.com/medusajs/medusa/commit/8078ac6c62994ebc6d279c2612472086c20ce346) Thanks [@NicolasGorga](https://github.com/NicolasGorga)! - feat(core-flows): automatically refresh taxes upon state change
+
+- [#15614](https://github.com/medusajs/medusa/pull/15614) [`3382c8189bfc9f44e86123496ef3665e92ac91c9`](https://github.com/medusajs/medusa/commit/3382c8189bfc9f44e86123496ef3665e92ac91c9) Thanks [@shahednasser](https://github.com/shahednasser)! - feat(core-flows,types,utils,medusa): support global product options in imports
+
+- [#15986](https://github.com/medusajs/medusa/pull/15986) [`917ddbe0e56b4e739fa828140cd7973d823d1bbd`](https://github.com/medusajs/medusa/commit/917ddbe0e56b4e739fa828140cd7973d823d1bbd) Thanks [@NicolasGorga](https://github.com/NicolasGorga)! - fix(core-flows): correctly clear a region payment providers
+
+- [#15804](https://github.com/medusajs/medusa/pull/15804) [`812687d1195645a2ae223553c400c9142c91f74c`](https://github.com/medusajs/medusa/commit/812687d1195645a2ae223553c400c9142c91f74c) Thanks [@shafi-VM](https://github.com/shafi-VM)! - fix(core-flows): translate line items when creating an order with items and a locale
+
+  `createOrderWorkflow` did not run `getTranslatedLineItemsStep`, so line items provided at order/draft-order creation kept their default-language titles even when a `locale` was set — while items added later (via `addOrderLineItemsWorkflow`) were translated. Line items are now translated on creation too, matching the add-items, cart, and add-to-cart paths.
+
+- Updated dependencies [[`513c01a5a7f587cb52c92677e2379e54bd990361`](https://github.com/medusajs/medusa/commit/513c01a5a7f587cb52c92677e2379e54bd990361)]:
+  - @medusajs/framework@2.17.3
+
 ## 2.17.2
 
 ### Patch Changes

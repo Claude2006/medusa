@@ -1,5 +1,14 @@
 # @medusajs/admin-vite-plugin
 
+## 2.17.3
+
+### Patch Changes
+
+- [#15984](https://github.com/medusajs/medusa/pull/15984) [`e765a7e6b5e9eafff510218f9884e867e2d6e224`](https://github.com/medusajs/medusa/commit/e765a7e6b5e9eafff510218f9884e867e2d6e224) Thanks [@NicolasGorga](https://github.com/NicolasGorga)! - feat(admin-vite-plugin,dashboard): add config.label to document title resolution seo fallback
+
+- Updated dependencies []:
+  - @medusajs/admin-shared@2.17.3
+
 ## 2.17.2
 
 ### Patch Changes

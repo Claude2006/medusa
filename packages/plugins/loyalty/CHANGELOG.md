@@ -1,5 +1,23 @@
 # @medusajs/loyalty-plugin
 
+## 2.17.3
+
+### Patch Changes
+
+- [#15797](https://github.com/medusajs/medusa/pull/15797) [`6d1622265c96e2417b64aa69fd867a89522e6b76`](https://github.com/medusajs/medusa/commit/6d1622265c96e2417b64aa69fd867a89522e6b76) Thanks [@BIGSUS24](https://github.com/BIGSUS24)! - feat(dashboard,utils,loyalty-plugin): Add AOA (Angolan Kwanza) to the default currency list and stop the admin region editor from crashing on unknown currency codes
+
+- [#15302](https://github.com/medusajs/medusa/pull/15302) [`3af18a52c12a2db2933bdb376ed4308ccb0b6519`](https://github.com/medusajs/medusa/commit/3af18a52c12a2db2933bdb376ed4308ccb0b6519) Thanks [@Ultron03](https://github.com/Ultron03)! - fix(medusa, cli): db commands now exit with code 1 when container initialization fails
+  chore(loyalty,draft-order): update build process to handle plugin build without cyclic deps issue
+- Updated dependencies [[`6d1622265c96e2417b64aa69fd867a89522e6b76`](https://github.com/medusajs/medusa/commit/6d1622265c96e2417b64aa69fd867a89522e6b76), [`04daac9a7639435a89446578b9012ad0a673ac6b`](https://github.com/medusajs/medusa/commit/04daac9a7639435a89446578b9012ad0a673ac6b), [`dfdcdd7467ede40e1bb80ce866bfe2c256b8ff86`](https://github.com/medusajs/medusa/commit/dfdcdd7467ede40e1bb80ce866bfe2c256b8ff86), [`3af18a52c12a2db2933bdb376ed4308ccb0b6519`](https://github.com/medusajs/medusa/commit/3af18a52c12a2db2933bdb376ed4308ccb0b6519), [`3382c8189bfc9f44e86123496ef3665e92ac91c9`](https://github.com/medusajs/medusa/commit/3382c8189bfc9f44e86123496ef3665e92ac91c9), [`503e4ba59a152c349982974f152caf993c9126fe`](https://github.com/medusajs/medusa/commit/503e4ba59a152c349982974f152caf993c9126fe), [`04b19ba7b861447c5f2a944a47f5533ee64e0acf`](https://github.com/medusajs/medusa/commit/04b19ba7b861447c5f2a944a47f5533ee64e0acf), [`2abcad9ad02782044257f038069227665a09362d`](https://github.com/medusajs/medusa/commit/2abcad9ad02782044257f038069227665a09362d), [`d5c6d183e187a24d5cf6d39bca8d79d72a4f1f71`](https://github.com/medusajs/medusa/commit/d5c6d183e187a24d5cf6d39bca8d79d72a4f1f71), [`4f12b2eee5a916153badd07f3a9f44212ced24f1`](https://github.com/medusajs/medusa/commit/4f12b2eee5a916153badd07f3a9f44212ced24f1), [`e765a7e6b5e9eafff510218f9884e867e2d6e224`](https://github.com/medusajs/medusa/commit/e765a7e6b5e9eafff510218f9884e867e2d6e224), [`c3450525267a77d5b1e18e6f49fe8f6d1cfaf865`](https://github.com/medusajs/medusa/commit/c3450525267a77d5b1e18e6f49fe8f6d1cfaf865), [`513c01a5a7f587cb52c92677e2379e54bd990361`](https://github.com/medusajs/medusa/commit/513c01a5a7f587cb52c92677e2379e54bd990361)]:
+  - @medusajs/dashboard@2.17.3
+  - @medusajs/medusa@2.17.3
+  - @medusajs/cli@2.17.3
+  - @medusajs/framework@2.17.3
+  - @medusajs/test-utils@2.17.3
+  - @medusajs/admin-sdk@2.17.3
+  - @medusajs/icons@2.17.3
+  - @medusajs/ui@4.1.20
+
 ## 2.17.2
 
 ### Patch Changes

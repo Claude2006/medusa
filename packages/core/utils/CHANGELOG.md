@@ -1,5 +1,28 @@
 # @medusajs/utils
 
+## 2.17.3
+
+### Patch Changes
+
+- [#15797](https://github.com/medusajs/medusa/pull/15797) [`6d1622265c96e2417b64aa69fd867a89522e6b76`](https://github.com/medusajs/medusa/commit/6d1622265c96e2417b64aa69fd867a89522e6b76) Thanks [@BIGSUS24](https://github.com/BIGSUS24)! - feat(dashboard,utils,loyalty-plugin): Add AOA (Angolan Kwanza) to the default currency list and stop the admin region editor from crashing on unknown currency codes
+
+- [#15834](https://github.com/medusajs/medusa/pull/15834) [`04daac9a7639435a89446578b9012ad0a673ac6b`](https://github.com/medusajs/medusa/commit/04daac9a7639435a89446578b9012ad0a673ac6b) Thanks [@leobenzol](https://github.com/leobenzol)! - fix(medusa,utils): defineConfig typed modules
+
+- [#15694](https://github.com/medusajs/medusa/pull/15694) [`b18d4de91c2c229ba7a03a9d541e1b8de71f52a9`](https://github.com/medusajs/medusa/commit/b18d4de91c2c229ba7a03a9d541e1b8de71f52a9) Thanks [@sawirricardo](https://github.com/sawirricardo)! - fix(utils): apply MikroORM onUpdate hooks before native batch updates
+
+- [#15968](https://github.com/medusajs/medusa/pull/15968) [`a48e78b953943efd11204f48890608020f7949e0`](https://github.com/medusajs/medusa/commit/a48e78b953943efd11204f48890608020f7949e0) Thanks [@peterlgh7](https://github.com/peterlgh7)! - join only with link table if only filtering on target key
+
+- [#15614](https://github.com/medusajs/medusa/pull/15614) [`3382c8189bfc9f44e86123496ef3665e92ac91c9`](https://github.com/medusajs/medusa/commit/3382c8189bfc9f44e86123496ef3665e92ac91c9) Thanks [@shahednasser](https://github.com/shahednasser)! - feat(core-flows,types,utils,medusa): support global product options in imports
+
+- [#15686](https://github.com/medusajs/medusa/pull/15686) [`99f2ea9c85a64a08c56196ba963db2c8dd0b7923`](https://github.com/medusajs/medusa/commit/99f2ea9c85a64a08c56196ba963db2c8dd0b7923) Thanks [@mrpackethead](https://github.com/mrpackethead)! - feat(utils): support dynamic password function in createPgConnection for RDS IAM auth
+
+  Pass `driverOptions.dynamicPassword` and `driverOptions.expirationChecker` through to the Knex connection config, enabling AWS RDS IAM authentication and other rotating-credential patterns.
+
+- [#15968](https://github.com/medusajs/medusa/pull/15968) [`a48e78b953943efd11204f48890608020f7949e0`](https://github.com/medusajs/medusa/commit/a48e78b953943efd11204f48890608020f7949e0) Thanks [@peterlgh7](https://github.com/peterlgh7)! - skip self-joins for read-only links in cross-module filters
+
+- Updated dependencies []:
+  - @medusajs/deps@2.17.3
+
 ## 2.17.2
 
 ### Patch Changes

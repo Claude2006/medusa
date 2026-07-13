@@ -1,5 +1,11 @@
 # @medusajs/eslint-plugin
 
+## 2.17.3
+
+### Patch Changes
+
+- [#15784](https://github.com/medusajs/medusa/pull/15784) [`598020c157cec9b9905f7817c3cded4aa44ece94`](https://github.com/medusajs/medusa/commit/598020c157cec9b9905f7817c3cded4aa44ece94) Thanks [@gaoflow](https://github.com/gaoflow)! - fix(eslint-plugin): normalize Windows paths in cross-module relationship rule
+
 ## 2.17.2
 
 ### Patch Changes

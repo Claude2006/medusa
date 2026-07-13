@@ -1,5 +1,16 @@
 # @medusajs/rbac
 
+## 2.17.3
+
+### Patch Changes
+
+- [#15833](https://github.com/medusajs/medusa/pull/15833) [`ce410177897f2de3f35825096df7870ebf5b2f8f`](https://github.com/medusajs/medusa/commit/ce410177897f2de3f35825096df7870ebf5b2f8f) Thanks [@pevey](https://github.com/pevey)! - fix(rbac): add migration that creates the missing `rbac_role_inheritance` table
+
+  The `RbacRoleInheritance` model is registered by the module but no migration created the corresponding `rbac_role_inheritance` table or its foreign keys, so running `medusa db:migrate` left the module in a broken state and subsequent `medusa db:generate rbac` runs would produce migration files inside `node_modules` (and fail to load under Node's native TS stripping).
+
+- Updated dependencies [[`513c01a5a7f587cb52c92677e2379e54bd990361`](https://github.com/medusajs/medusa/commit/513c01a5a7f587cb52c92677e2379e54bd990361)]:
+  - @medusajs/framework@2.17.3
+
 ## 2.17.2
 
 ### Patch Changes
